@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  font-family: "Patua One", sans-serif;
+  line-height: 1.5;
 }
 
 *,
@@ -15,4 +17,22 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+
+.pano {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 14rem;
+  z-index: 1;
 }
