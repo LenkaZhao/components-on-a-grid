@@ -30,10 +30,22 @@ body {
   align-self: end;
 }
 
+nav {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+a {
+  color: #fff;
+  font-size: 2rem;
+}
+
 nav ul {
   display: flex;
-  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
   list-style-type: none;
+  font-family: "Patua One", sans-serif;
 }
 
 img {
